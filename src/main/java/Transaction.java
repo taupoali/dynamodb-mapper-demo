@@ -23,6 +23,9 @@ public class Transaction {
     @DynamoDBAttribute(attributeName = "amount")
     private Integer amount;
 
+    @DynamoDBAttribute(attributeName = "type")
+    private String type;
+
     @DynamoDBVersionAttribute(attributeName = "version")
     private Long version;
 
